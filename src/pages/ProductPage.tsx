@@ -51,7 +51,7 @@ export const ProductPage = () => {
   if (!product) return <div>Loading...</div>;
 
   return (
-    <section className="max-w-6xl px-10 py-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
+    <section className="max-w-6xl flex-grow h-full px-10 py-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
       {/* Imagen */}
       <div className="flex flex-col gap-4">
         <div className="w-full h-64 md:h-[400px] bg-secondary">
@@ -104,7 +104,7 @@ export const ProductPage = () => {
         {/* Botón de reserva */}
         <button
           disabled={days <= 0}
-          className="mt-auto bg-accent py-2 px-2 rounded rounded-3xl w-full disabled:opacity-50 disabled:cursor-not-allowed"
+          className="mt-8 bg-accent py-2 px-2 rounded rounded-3xl w-full disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {days <= 0
             ? "Selecciona las fechas de alquiler"

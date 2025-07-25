@@ -29,7 +29,7 @@ export const BookingSummary = ({
   );
 
   return (
-    <section className=" border-t border-[bg-primary] pt-4 my-6 text-sm ">
+    <section className=" border-t border-[bg-primary] pt-4 mt-8 text-sm ">
       <LineItem
         label={`${days} día${days > 1 ? "s" : ""} × ${formatCurrency(pricePerDay)}`}
         amount={subtotal}
