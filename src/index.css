@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "react-datepicker/dist/react-datepicker.css";
+
+@theme {
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-border: var(--border);
+}
+
+@layer base {
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+        --primary: #fdfdfd;
+        --secondary: rgba(223, 221, 221, 0.44);
+        --primary-foreground: #1a1a1a;
+
+        --background: #ffffff;
+        --foreground: #1f2937; /* gray-800 */
+
+        --muted: #f3f4f6; /* gray-100 */
+        --muted-foreground: #6b7280; /* gray-500 */
+
+        --accent: #8f8dc1; /* indigo-600 */
+        --accent-foreground: #ffffff;
+
+        --border: #e5e7eb; /* gray-200 */
+    }
+
+    .dark {
+        --primary: #515050;
+        --secondary: #252525;
+        --primary-foreground: #d1d5db;
+
+        --background: #0f172a; /* slate-900 */
+        --foreground: #f8fafc; /* slate-50 */
+
+        --muted: #1e293b; /* slate-800 */
+        --muted-foreground: #9ca3af; /* gray-400 */
+
+        --accent: #6366f1; /* indigo-500 */
+        --accent-foreground: #e0e7ff;
+
+        --border: #334155; /* slate-700 */
+    }
+}
